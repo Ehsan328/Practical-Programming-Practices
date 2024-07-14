@@ -1,0 +1,16 @@
+string = '''Whiskey Hotel Four Tango Dash Alpha
+Romeo Three Dash Yankee Oscar Uniform Dash
+Sierra One November Kilo India November Golf
+Dash Four Bravo Zero Uniform Seven'''
+items = string.split()
+num = ['Zero', 'One', 'Two', 'Three', 'Four',
+       'Five','Six', 'Seven', 'Eight', 'Nine']
+result = ''
+for i in items:
+    if i in num:
+        for n in range(0,9):
+            if i == num[n]:
+                result += str(n)
+    result += i[0]
+print(result)
+        
